@@ -1,0 +1,47 @@
+{
+  "name": "chart",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.23.0",
+    "@influxdata/influxdb-client-apis": "^1.25.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "core-js": "^3.22.2",
+    "echarts": "^5.3.2",
+    "echarts-for-react": "^3.0.2",
+    "lib": "^4.3.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "tslib": "^2.4.0",
+    "web-vitals": "^2.1.4",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://us-east-1-1.aws.cloud2.influxdata.com/api/v2/query"
+}

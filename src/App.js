@@ -5,10 +5,9 @@ import Chart from './Chart';
 export default function App() {
   const [chartData, setChartData] = useState([]);
   const [isCompleted, setCompleted] = useState(false);
-  const token =
-    'v96hkhxEFt0zeXtfPk4heXIUOItCU6em867gAE00R1Gvq8LGE1KsBZNkHjMrejRL6vMDi4sNvhA3QbHwRNv8ow==';
-  const org = 'kovid.rathee@gmail.com';
-  const url = 'https://us-east-1-1.aws.cloud2.influxdata.com';
+  const token = '';
+  const org = '';
+  const url = '';
 
   const queryApi = new InfluxDB({ url, token }).getQueryApi(org);
 

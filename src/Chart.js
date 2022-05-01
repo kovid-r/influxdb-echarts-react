@@ -5,8 +5,8 @@ var colorPalette = ['#7570b3','#e7298a','#1b9e77','#d95f02','#66a61e'];
 
 // Mock time values for measurements
 var arr = [], i, j;
-for(i=0; i<24; i++) {
-  for(j=0; j<4; j++) {
+for (i=0; i<24; i++) {
+  for (j=0; j<4; j++) {
     arr.push(i + ":" + (j===0 ? "00" : 15*j) );
   }
 }
@@ -39,14 +39,6 @@ function Chart({ chartData }) {
           xAxis: {
             type: 'category',
             boundaryGap: false,
-            // data: chartData.filter(function (chartData) {
-            //   return chartData.host === "host1";
-            // }).map((val) => val._stop)
-            
-            // data: Array.from(Array(chartData.filter(function (chartData) {
-            //   return chartData.host === "host1";
-            // }).length).keys())
-
             data: arr
           },
           yAxis: {
@@ -101,14 +93,6 @@ function Chart({ chartData }) {
             toolbox: {
               show : true,
           },
-          // data: chartData.filter(function (chartData) {
-          //     return chartData.host === "host1";
-          //   }).map((val) => val._stop.substring(19,29)),
-          
-          // data: Array.from(Array(chartData.filter(function (chartData) {
-          //       return chartData.host === "host1";
-          //    }).length).keys())
-
           data: arr
           },
           yAxis: {
